@@ -1,24 +1,23 @@
-	<!DOCTYPE html>
 	<html lang="en">
-
+    <base href="https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@ae6706e5224c55594c491edfc7f5ad541e2ea02b/baseball%20bros/" </base>
 	<head>
 
 	  <meta charset="utf-8">
-    <base href="https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@d7f8079f5d979182e04f05b1ade24f2a757253a3/football%20bros/"
 
-	  <meta name="description" content="Online multiplayer football! Bone crushing hits, long bombs, and tons more!" />
+	  <title>BASEBALL BROS! | Official Site</title>
+	  <meta name="description" content="Online multiplayer baseball! Strikeouts, steals, and grand slams! Hit Nukes!" />
 	  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	  <link rel="shortcut icon" type="image/png" href="./favicon.png">
-	  <meta name="Keywords" content="Football, Play, Free, Online, Multiplayer, Games, IO, Sports, Scrolling, Friends">
+	  <meta name="Keywords" content="Baseball, Play, Free, Online, Multiplayer, Games, IO, Sports, Scrolling, Friends">
 	  <meta name="author" content="Blue Wizard Digital">
 
 	  <meta property="og:type" content="website" />
-	  <meta property="og:title" content="Football Bros" />
-	  <meta property="og:description" content="Online multiplayer football! Bone crushing hits, long bombs, and tons more!" />
+	  <meta property="og:title" content="Baseball Bros" />
+	  <meta property="og:description" content="Online multiplayer baseball! Hit home runs, steal bases, strike out the side!" />
 	  <link rel="manifest" href="manifest.json">
 
 
-	  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/FootballBros.js"></script>
+	  <script type="text/javascript" src="./BaseballBros.js?th=76"></script>
 
 	  <script>
 	    window.addEventListener("touchmove", function(event) {
@@ -105,7 +104,7 @@
 	    h3 {
 	      font-size: 24px;
 	      color: #ffa500;
-	      /* Football-themed color */
+	      /* Baseball-themed color */
 	      margin-bottom: 15px;
 	    }
 
@@ -227,9 +226,8 @@
 	    }
 	  </style>
 
-
 	  <!-- Google tag (gtag.js) -->
-	  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GREB63PWEL"></script>
+	  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D67EBFNGR6"></script>
 
 	  <script>
 	    window.dataLayer = window.dataLayer || [];
@@ -239,7 +237,7 @@
 	    }
 	    gtag('js', new Date());
 
-	    if (location.hostname != "localhost") gtag('config', 'G-GREB63PWEL', {
+	    if (location.hostname != "localhost") gtag('config', 'G-D67EBFNGR6', {
 	      cookie_flags: 'secure;samesite=none'
 	    });
 	  </script>
@@ -275,7 +273,7 @@
 	      console.log("notifying");
 	      if (typeof $msstart !== 'undefined') {
 	        console.log("notifying2");
-	        var id = btoa("");
+	        var id = btoa("https://baseballbros.io/sbros_364x180.png");
 	        $msstart.scheduleNotificationAsync({
 	          title: 'Unlock new bros now!',
 	          description: 'You are just about to unlock a new Bro! Who will it be?',
@@ -367,13 +365,14 @@
 	  <script>
 	    // Your web app's Firebase configuration
 	    const firebaseConfig = {
-	      apiKey: "AIzaSyAFCwYdbkLozIgtH5zuGydcjk_LNhYnve0",
-	      authDomain: "football-bros-8f1b3.firebaseapp.com",
-	      projectId: "football-bros-8f1b3",
-	      storageBucket: "football-bros-8f1b3.appspot.com",
-	      messagingSenderId: "807434051106",
-	      appId: "1:807434051106:web:7e2fd59782e7c13165f47b"
+	      apiKey: "AIzaSyBuzj8XEP7-5kOFFhyuxylQ6P0B2G_ogsM",
+	      authDomain: "baseball-bros-8dd7f.firebaseapp.com",
+	      projectId: "baseball-bros-8dd7f",
+	      storageBucket: "baseball-bros-8dd7f.firebasestorage.app",
+	      messagingSenderId: "618024516218",
+	      appId: "1:618024516218:web:11efff2d4b092aefaf99c3"
 	    };
+
 
 	    // Initialize Firebase
 	    firebase.initializeApp(firebaseConfig);
@@ -488,16 +487,18 @@
 	  <div id="loading" style="position: absolute; z-index: 15; top: 60%; left: 50%; transform: translate(-50%, 0); background: black;">
 	    <center><img src="assets/loading4.png"><br />
 	      <img src="assets/fbro.png">
+	      <img src="assets/bbbro.png">
 	      <img src="assets/sbro.png">
 	      <img src="assets/wbro.png">
+	      <img src="assets/kbro.png">
 	      <img src="assets/bbro.png">
 	    </center>
 	  </div>
 
 	  <div id="game2" style="width: 100%; height: 100%; ">
-	    <div id="openfl-content" onblur="window.focus();" style="width: calc(100%); float:left;">
+	    <div id="openfl-content" onblur="window.focus(); window.scrollTo(0, 0);" style="width: calc(100%); float:left;">
 	      <script type="text/javascript">
-	        lime.embed("FootballBros", "openfl-content", 0, 0, {
+	        lime.embed("BaseballBros", "openfl-content", 0, 0, {
 	          parameters: {}
 	        });
 	      </script>
@@ -505,33 +506,33 @@
 	    <div id="preroll" style="width: 960px; height: 540px; display: none; position: absolute; top: 50%; left: 50%; z-index: 100; transform: translate(-50%, -50%);">
 	    </div>
 
-	    <div id="footballbros-io_300x250" style="width: 336px; height: 280px; visibility:hidden; display: none; position: absolute; top: 30px; left: 30px; z-index: 100;overflow: hidden;">
+	    <div id="baseballbros-io_300x250" style="width: 336px; height: 280px; visibility:hidden; display: none; position: absolute; top: 30px; left: 30px; z-index: 100;overflow: hidden;">
 	      <script>
 	        if (typeof gCrazySDK == 'undefined') {
 	          aiptag.cmd.display.push(function() {
-	            aipDisplayTag.display('footballbros-io_300x250');
+	            aipDisplayTag.display('baseballbros-io_300x250');
 	          });
 	        }
 	      </script>
 	    </div>
-	    <div id="footballbros-io_300x250_2" style="width: 336px; height: 280px; visibility:hidden; display: none; position: absolute; top: 30px; left: 30px; z-index: 100;overflow: hidden;">
+	    <div id="baseballbros-io_300x250_2" style="width: 336px; height: 280px; visibility:hidden; display: none; position: absolute; top: 30px; left: 30px; z-index: 100;overflow: hidden;">
 	      <script>
 	        if (typeof gCrazySDK == 'undefined') {
 	          aiptag.cmd.display.push(function() {
-	            aipDisplayTag.display('footballbros-io_300x250_2');
+	            aipDisplayTag.display('baseballbros-io_300x250_2');
 	          });
 	        }
 	      </script>
 	    </div>
-	    <div id="footballbros-io_336x280" style="visibility:hidden; width: 336px; height: 600px; display: none; position: absolute; left: 30px; z-index: 100;overflow: hidden;">
+	    <div id="baseballbros-io_336x280" style="visibility:hidden; width: 336px; height: 600px; display: none; position: absolute; left: 30px; z-index: 100;overflow: hidden;">
 	    </div>
-	    <div id="footballbros-io_336x280_2" style="visibility:hidden; width: 336px; height: 600px; display: none; position: absolute; left: 30px; z-index: 100;overflow: hidden;">
+	    <div id="baseballbros-io_336x280_2" style="visibility:hidden; width: 336px; height: 600px; display: none; position: absolute; left: 30px; z-index: 100;overflow: hidden;">
 	    </div>
-	    <div id="footballbros-io_728x90" style="visibility:hidden; width: 728px; height: 90px; display: none; position: absolute; top: 30px; left: 30px; z-index: 100;overflow: hidden;">
+	    <div id="baseballbros-io_728x90" style="visibility:hidden; width: 728px; height: 90px; display: none; position: absolute; top: 30px; left: 30px; z-index: 100;overflow: hidden;">
 	    </div>
-	    <div id="footballbros-io_728x90_m" style="visibility:hidden; width: 728px; height: 90px; display: none; position: absolute; top: 30px; left: 30px; z-index: 100;overflow: hidden;">
+	    <div id="baseballbros-io_728x90_m" style="visibility:hidden; width: 728px; height: 90px; display: none; position: absolute; top: 30px; left: 30px; z-index: 100;overflow: hidden;">
 	    </div>
-	    <div id="footballbros-io_970x250" style="visibility:hidden; width: 970px; height: 250px; display: none; position: absolute; top: 30px; left: 30px; z-index: 100; text-align: center;overflow: hidden;">
+	    <div id="baseballbros-io_970x250" style="visibility:hidden; width: 970px; height: 250px; display: none; position: absolute; top: 30px; left: 30px; z-index: 100; text-align: center;overflow: hidden;">
 	    </div>
 
 	    <div class="feedback-form" id="feedbackForm" style="display:none;">
@@ -569,7 +570,7 @@
 	        const screenResolution = `${window.screen.width}x${window.screen.height}`;
 	        const windowResolution = `${window.innerWidth}x${window.innerHeight}`;
 	        var aOS = getOSFromUserAgent();
-	        var aCity = 'Provo';
+	        var aCity = 'Unknown';
 	        const hostname = window.location.hostname;
 	        const gpu = (() => {
 	          const canvas = document.createElement('canvas');
@@ -637,23 +638,18 @@
 	  <br />
 	  <div tabindex="-1" id="more">
 	    <div class="info-box">
-	      <h3>About Football Bros</h3>
-	      <p>Alt url: www.dunk.monster. Football Bros is a simple, fast-paced football game with all kinds of crazy action! With online multiplayer gameplay, lots of plays, and all kinds of crazy football action!</p>
-	      <p>The controls are very simple: Use either the arrow keys or WASD to control your bro. Space bar will throw a pass, dive, or stiff arm, depending on the situation.</p>
+	      <h3>About Baseball Bros</h3>
+	      <p>Baseball Bros is a simple, fast-paced baseball game that's easy to learn and has lots of crazy hijinks! With online multiplayer gameplay, franchise mode, fun pitching, and so much more!</p>
+	      <p>Controls: Use either the arrow keys or WASD to control your bro. Space bar will throw a the ball, dive, slide, or change directions when you're running the bases.</p>
 	      <p>Be sure to follow us on social media for the latest updates and info!</p>
 	      <br />
-	      <h3>Changelog (1/30/2024)</h3>
-	      <p>Added Sayjuan to Philly.</p>
-	      <p>Changed play selection to a horizontal strip to fit on more screens.</p>
-	      <p>Fixed stuck moving in a direction once a play starts.</p>
-	      <p>Fixed "1 wins away" grammar.</p>
-	      <p>Fixed punts so kicking team doesnt crowd around the ball.</p>
-	      <p>Fixed punts so that kicking team couldn't catch a kick on the fly and get a 1st down.</p>
-	      <p>Fixed posession on 2 pt conversions.</p>
-	      <p>Fixed diving into a snapped ball so you can't start diving until the qb actually has the ball.</p>
-	      <p>Fixed glitch where sometimes a kickoff/xp would show up when it wasn't supposed to when a td was scored right at 0:00 of the 1st half.</p>
-	      <p>Added blue wizard logo.</p>
-	      <p>Added 5 new plays that are unlocked as perks.</p>
+	      <h3>Changelog (3/13/2024)</h3>
+	      <p>Fixed another glitch where the game ends to early if the home team scores on their last at bat while still losing.</p>
+	      <p>Made cpu players better at catching fly balls. Should make it more difficult in 1p games.</p>
+	      <p>Updated theme song.</p>
+	      <p>Fixed more innings glitches.</p>
+	      <p>Fixed glitch where home team wouldn't get their fair at bat in extra innings.</p>
+	      <p>Improved virtual controller on iPads and pnones.</p>
 	    </div>
 	    <div class="info-box">
 	      <h3>FAQ</h3>
@@ -662,21 +658,21 @@
 	      <b>How do I play?</b>
 	      <p>Use your arrow keys and space bar! The rest is easy- pick your play and go!</p>
 	      <b>Which browser should I use?</b>
-	      <p>You should use Chrome. It is the only browser guaranteed to work. Football Bros has also been tested to work on Firefox and Safari, but not guaranteed.</p>
+	      <p>You should use Chrome. It is the only browser guaranteed to work. Baseball Bros has also been tested to work on Firefox and Safari, but not guaranteed.</p>
 	      <b>Are there more Bros games?</b>
-	      <p>Yes! Check out <a tabindex="-1" href="">Basket Bros</a>, <a tabindex="-1" href="">Soccer Bros</a> and <a tabindex="-1" href="https://wrestlebros.io">Wrestle Bros</a>. Also be sure to check out <a tabindex="-1" href="https://iogames.space" target="_blank">IO Games at iogames.space</a></p>
+	      <p>Yes! Check out <a tabindex="-1" href="https://footballbros.io">Football Bros</a>, href="https://basketbros.io">Basket Bros</a>, <a tabindex="-1" href="https://soccerbros.gg">Soccer Bros</a> and <a tabindex="-1" href="https://wrestlebros.io">Wrestle Bros</a>. Also be sure to check out <a tabindex="-1" href="https://freegames.io" target="_blank">Web games at FreeGames.io</a></p>
 	      <b>Do you have a favorite team?</b>
 	      <p>Yes, but we're not saying which one. Drop us an e-mail if you think you know.</p>
 	      <b>I'm blocked, where else can i play?</b>
-	      <p>Check here, these links work for both football and basket bros: <a href="">Football Bros Unblocked</a></p>
+	      <p>Check here, these links work for all the bros games: <a href="https://sites.google.com/bluewizard.com/basket-bros-unblocked">Baseball Bros Unblocked</a></p>
 
 	    </div>
 	  </div>
-	  <footer>
+	  <footer id="footer" tabindex="-1">
 	    <div tabindex="-1" class="footer-links">
-	      <a href="">Copyright 2024 Blue Wizard Digital</a> |
-	      <a tabindex="-1" href="">Terms of Service</a> |
-	      <a tabindex="-1" href="">Privacy Policy</a>
+	      <a tabindex="-1" href="https://bluewizard.com">Copyright 2024 Blue Wizard Digital</a> |
+	      <a tabindex="-1" href="https://bluewizard.com/terms/">Terms of Service</a> |
+	      <a tabindex="-1" href="https://bluewizard.com/privacypolicy/">Privacy Policy</a>
 	    </div>
 	  </footer>
 	  <script>
@@ -698,12 +694,12 @@
 	      if (/Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent)) {
 	        return;
 	      }
-	      var l = window.document.getElementById('footballbros-io_160x600');
+	      var l = window.document.getElementById('baseballbros-io_160x600');
 	      if (l == null) return;
 	      l.style.display = '';
 	      l.style.visibility = 'visible';
 
-	      l = window.document.getElementById('footballbros-io_160x600');
+	      l = window.document.getElementById('baseballbros-io_160x600');
 	      if (l == null) return;
 	      l.style.display = '';
 	      l.style.visibility = 'visible';
@@ -713,12 +709,12 @@
 	        var d = new Date();
 	        var ms = d.getTime();
 	        if (ms - lastRefresh > 10000) {
-	          gCrazySDK.requestResponsiveBanner(["footballbros-io_160x600"]);
+	          gCrazySDK.requestResponsiveBanner(["baseballbros-io_160x600"]);
 	          lastRefresh = ms;
 	        }
 	      } else if (typeof aipDisplayTag !== 'undefined') {
-	        refreshTag('footballbros-io_160x600');
-	        refreshTag('footballbros-io_160x600_2');
+	        refreshTag('baseballbros-io_160x600');
+	        refreshTag('baseballbros-io_160x600_2');
 	        SendEvent('event', 'aip_banner_requested');
 	      } else
 	        SendEvent('event', 'banner_adblocked');
@@ -740,7 +736,7 @@
 	      if (/Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent)) {
 	        return;
 	      }
-	      var l = window.document.getElementById('footballbros-io_300x250');
+	      var l = window.document.getElementById('baseballbros-io_300x250');
 	      if (l == null) {
 	        return;
 	      }
@@ -748,7 +744,7 @@
 	      l.style.visibility = 'visible';
 
 	      if (typeof gCrazySDK !== 'undefined') {} else if (typeof aipDisplayTag !== 'undefined') {
-	        refreshTag('footballbros-io_300x250');
+	        refreshTag('baseballbros-io_300x250');
 	        SendEvent('event', 'aip_banner_requested');
 	        if (typeof aiptag !== 'undefined' && aiptag.settings == "") {
 	          if (doTagOnce) SendEvent('event', 'aip_prosper');
@@ -777,7 +773,7 @@
 	      if (/Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent)) {
 	        return;
 	      }
-	      var l = window.document.getElementById('footballbros-io_300x250_2');
+	      var l = window.document.getElementById('baseballbros-io_300x250_2');
 	      if (l == null) return;
 	      l.style.display = '';
 	      l.style.visibility = 'visible';
@@ -787,13 +783,13 @@
 	        var ms = d.getTime();
 	        if (ms - lastRefresh2 > 10000) {
 	          //hndled by the first banner request
-	          //gCrazySDK.requestBanner([{containerId: 'footballbros-io_300x250_2',size: '300x250',}]);
-	          gCrazySDK.requestResponsiveBanner(["footballbros-io_300x250", "footballbros-io_300x250_2"]);
+	          //gCrazySDK.requestBanner([{containerId: 'baseballbros-io_300x250_2',size: '300x250',}]);
+	          gCrazySDK.requestResponsiveBanner(["baseballbros-io_300x250", "baseballbros-io_300x250_2"]);
 
 	          lastRefresh2 = ms;
 	        }
 	      } else if (typeof aipDisplayTag !== 'undefined') {
-	        refreshTag('footballbros-io_300x250_2');
+	        refreshTag('baseballbros-io_300x250_2');
 	        SendEvent('event', 'aip_banner_requested');
 	        if (typeof aiptag !== 'undefined' && aiptag.settings == "") {
 	          if (doTagOnce) SendEvent('event', 'aip_prosper');
@@ -810,14 +806,14 @@
 	      if (/Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent)) {
 	        return;
 	      }
-	      var l = window.document.getElementById('footballbros-io_728x90');
+	      var l = window.document.getElementById('baseballbros-io_728x90');
 	      if (l == null) return;
 	      l.style.display = '';
 	      l.style.visibility = 'visible';
 	      if (typeof gCrazySDK !== 'undefined') {
-	        gCrazySDK.requestResponsiveBanner(["footballbros-io_728x90"]);
+	        gCrazySDK.requestResponsiveBanner(["baseballbros-io_728x90"]);
 	      } else if (typeof aipDisplayTag !== 'undefined') {
-	        refreshTag('footballbros-io_728x90');
+	        refreshTag('baseballbros-io_728x90');
 	        SendEvent('event', 'aip_banner_requested');
 	      } else
 	        SendEvent('event', 'banner_adblocked');
@@ -829,14 +825,14 @@
 	        return;
 	      }
 	      if (window.innerWidth < 1200) return;
-	      var l = window.document.getElementById('footballbros-io_336x280');
+	      var l = window.document.getElementById('baseballbros-io_336x280');
 	      if (l == null) return;
 	      l.style.display = '';
 	      l.style.visibility = 'visible';
 	      if (typeof gCrazySDK !== 'undefined') {
-	        gCrazySDK.requestResponsiveBanner(["footballbros-io_336x280"]);
+	        gCrazySDK.requestResponsiveBanner(["baseballbros-io_336x280"]);
 	      } else if (typeof aipDisplayTag !== 'undefined') {
-	        refreshTag('footballbros-io_336x280');
+	        refreshTag('baseballbros-io_336x280');
 	        SendEvent('event', 'aip_banner_requested');
 	        if (typeof aiptag !== 'undefined' && aiptag.settings == "") {
 	          if (doTagOnce) SendEvent('event', 'aip_prosper');
@@ -855,14 +851,14 @@
 	        return;
 	      }
 	      if (window.innerWidth < 1200) return;
-	      var l = window.document.getElementById('footballbros-io_336x280_2');
+	      var l = window.document.getElementById('baseballbros-io_336x280_2');
 	      if (l == null) return;
 	      l.style.display = '';
 	      l.style.visibility = 'visible';
 	      if (typeof gCrazySDK !== 'undefined') {
-	        gCrazySDK.requestResponsiveBanner(["footballbros-io_336x280_2"]);
+	        gCrazySDK.requestResponsiveBanner(["baseballbros-io_336x280_2"]);
 	      } else if (typeof aipDisplayTag !== 'undefined') {
-	        refreshTag('footballbros-io_336x280_2');
+	        refreshTag('baseballbros-io_336x280_2');
 	        SendEvent('event', 'aip_banner_requested');
 	        if (typeof aiptag !== 'undefined' && aiptag.settings == "") {
 	          if (doTagOnce) SendEvent('event', 'aip_prosper');
@@ -880,14 +876,14 @@
 	      if (/Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent)) {
 	        return;
 	      }
-	      var l = window.document.getElementById('footballbros-io_728x90_m');
+	      var l = window.document.getElementById('baseballbros-io_728x90_m');
 	      if (l == null) return;
 	      l.style.display = '';
 	      l.style.visibility = 'visible';
 	      if (typeof gCrazySDK !== 'undefined') {
-	        gCrazySDK.requestResponsiveBanner(["footballbros-io_728x90"]);
+	        gCrazySDK.requestResponsiveBanner(["baseballbros-io_728x90"]);
 	      } else if (typeof aipDisplayTag !== 'undefined') {
-	        refreshTag('footballbros-io_728x90_m');
+	        refreshTag('baseballbros-io_728x90_m');
 	        SendEvent('event', 'aip_banner_requested');
 	      } else
 	        SendEvent('event', 'banner_adblocked');
@@ -898,14 +894,14 @@
 	      if (/Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent)) {
 	        return;
 	      }
-	      var l = window.document.getElementById('footballbros-io_970x250');
+	      var l = window.document.getElementById('baseballbros-io_970x250');
 	      if (l == null) return;
 	      l.style.display = '';
 	      l.style.visibility = 'visible';
 	      if (typeof gCrazySDK !== 'undefined') {
-	        gCrazySDK.requestResponsiveBanner(["footballbros-io_970x250"]);
+	        gCrazySDK.requestResponsiveBanner(["baseballbros-io_970x250"]);
 	      } else if (typeof aipDisplayTag !== 'undefined') {
-	        refreshTag('footballbros-io_970x250');
+	        refreshTag('baseballbros-io_970x250');
 	        SendEvent('event', 'aip_banner_requested');
 	        if (typeof aiptag !== 'undefined' && aiptag.settings == "") {
 	          if (doTagOnce) SendEvent('event', 'aip_prosper');
@@ -918,7 +914,7 @@
 
 	        doTagOnce = false;
 	      } else {
-	        l.style.backgroundImage = "url(assets/turnoff.jpg)";
+	        l.style.backgroundImage = "url(assets/turnoff2.jpg)";
 	        SendEvent('event', 'banner_adblocked_message_shown');
 	      }
 
@@ -971,6 +967,11 @@
 	      window.scroll(0, window.scrollY + event.deltaY);
 	    }
 
+	    function doScroll2(event) {
+	      window.scroll(0, window.scrollY + event.deltaY);
+	    }
+
+
 	    setInterval(function() {
 	      //console.log("active element:" + document.activeElement);
 	      if (document.activeElement.tagName == "IFRAME") {
@@ -996,20 +997,20 @@
 
 
 	    /*		setInterval(function () { 
-	    			var l = window.document.getElementById('footballbros-io_160x600');
+	    			var l = window.document.getElementById('baseballbros-io_160x600');
 	    			if(l != null && typeof l.style !== 'undefined' && l.style.visibility == 'visible') {
 	    				ShowAd5();
 	    			}
 	    		}, 30000);
 
 	    		setInterval(function () { 
-	    			var l = window.document.getElementById('footballbros-io_160x600_2');
+	    			var l = window.document.getElementById('baseballbros-io_160x600_2');
 	    			if(l != null && typeof l.style !== 'undefined' && l.style.visibility == 'visible') {
 	    				ShowAd1();
 	    			}
 	    		}, 32000);*/
 
-	    var sid = 'dnq3hin5g67igk2rb6viv78pd1'
+	    var sid = '02k06etmp6fnad6qk2e82s1dfi'
 
 	    function updateStatus(fromEvent = false) {
 	      const req = new XMLHttpRequest();
@@ -1039,7 +1040,6 @@
 	    function EmailSignup() {
 	      if (document.getElementById("signup") || document.getElementById("deleteme")) return;
 	      const iframe = document.createElement("iframe");
-	      iframe.src = "";
 
 	      //			iframe.style.display = "block";
 	      iframe.style.width = "550px";
@@ -1076,7 +1076,7 @@
 	      }
 	    }
 
-	    var scrollerMessage = "   ";
+	    var scrollerMessage = " WELCOME TO BASEBALL BROS! ARE YOU READY TO HIT SOME NUKES? WE'RE STILL MAKING ADJUSTMENTS- YOU CAN CHECK THE BOTTOM OF THE PAGE FOR THE LATEST CHANGES! IF YOU HAVE A GLITCH OR FEEDBACK, YOU CAN EMAIL INFO@BLUEWIZARD.COM!!! ";
 
 	    const element = document.getElementById('openfl-content');
 	    // Function to keep the element focused
